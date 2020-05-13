@@ -3,4 +3,4 @@ Aplikasi iOS Dasar untuk submission dicoding, menggunakan dynamic table tanpa AP
 Support Dark mode
 
 ## Screenshot
-![Screenshot White Mode] (screenshot/screenshot_white_mode.jpg)
+![Screenshot White Mode](screenshot/screenshot_white_mode.jpg)
