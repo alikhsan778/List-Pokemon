@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="pokemonCell" rowHeight="78" id="KGk-i7-Jjw" customClass="PokemonTableViewCell" customModule="List_Pokemon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="metapod" translatesAutoresizingMaskIntoConstraints="NO" id="1ZC-8t-Fz4">
+                        <rect key="frame" x="16" y="10" width="58" height="58"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="58" id="AGR-4I-whO"/>
+                            <constraint firstAttribute="height" constant="58" id="hQr-NO-GqI"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dUj-Ok-wpB">
+                        <rect key="frame" x="90" y="17.5" width="214" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNl-UP-bnP">
+                                <rect key="frame" x="0.0" y="0.0" width="120.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="WhiteColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Species" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPB-ev-2x8">
+                                <rect key="frame" x="0.0" y="28.5" width="45" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" name="WhiteColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="dUj-Ok-wpB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="TM8-rf-0Ve"/>
+                    <constraint firstItem="1ZC-8t-Fz4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="V4v-FE-JJH"/>
+                    <constraint firstItem="dUj-Ok-wpB" firstAttribute="leading" secondItem="1ZC-8t-Fz4" secondAttribute="trailing" constant="16" id="bwc-2i-UvF"/>
+                    <constraint firstAttribute="trailing" secondItem="dUj-Ok-wpB" secondAttribute="trailing" constant="16" id="fz0-2t-pWO"/>
+                    <constraint firstItem="1ZC-8t-Fz4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="r1W-KN-wPD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imagePokemon" destination="1ZC-8t-Fz4" id="cWx-1a-q8n"/>
+                <outlet property="namePokemon" destination="mNl-UP-bnP" id="cPa-va-UKi"/>
+                <outlet property="parentView" destination="H2p-sc-9uM" id="3rA-Hj-RZZ"/>
+                <outlet property="speciesPokemon" destination="MPB-ev-2x8" id="PTv-q1-aBu"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="164.73214285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="metapod" width="352" height="400"/>
+        <namedColor name="WhiteColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
